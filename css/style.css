@@ -58,7 +58,6 @@ section {
 }
 .navbar {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
 }
 /* ==========Hero========== */
 #home .heading {
@@ -109,15 +108,22 @@ section {
 /* ==========Resume========== */
 .resume-title {
   color: var(--wp-black);
+  margin-left: 8px;
+  font-size: 24px;
 }
 #resume ul li {
   font-size: 20px;
   margin-right: 14px;
   color: var(--wp-blue);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 #resume ul li p {
   color: var(--wp-grey);
   font-size: 16px;
+}
+#resume ul li p i {
+  margin-left: 4px;
 }
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {
