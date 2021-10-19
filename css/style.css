@@ -1,0 +1,130 @@
+/* Root Color */
+:root {
+  --wp-blue: #4581f6;
+  --wp-navy: #002265;
+  --wp-black: #07253c;
+  --wp-grey: #45505b;
+  --dark-mode: #121212;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.dark-mode {
+  background-color: var(--dark-mode) !important;
+  color: #fff;
+}
+.section-title {
+  color: var(--wp-grey);
+}
+.section-title h2 {
+  font-size: 34px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1.5px;
+  background: var(--wp-grey);
+  bottom: 2px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: var(--wp-blue);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* ==========Navbar========== */
+.navbar a {
+  margin: 0 5px;
+}
+.navbar {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+/* ==========Hero========== */
+#home .heading {
+  font-size: 36px;
+  color: var(--wp-navy);
+  font-weight: 600;
+  line-height: 75px;
+  letter-spacing: 1.5px;
+  max-width: 100%;
+}
+#home .sub-heading {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 52px;
+  margin-bottom: -10px;
+  color: var(--wp-navy);
+}
+#home .description {
+  font-size: 22px;
+  color: var(--wp-grey);
+  margin-top: -15px;
+}
+#home span {
+  font-size: 22px;
+  color: var(--wp-blue);
+}
+#home img {
+  max-height: 500px;
+  animation-duration: 5s;
+}
+
+/* ==========About========== */
+#about img {
+  max-height: 500px;
+  transition: 2s;
+}
+#about img:hover {
+  transform: translateY(-20px);
+}
+#about .description {
+  font-size: 18px;
+  color: var(--wp-black);
+}
+#about .description span {
+  color: var(--wp-blue);
+}
+
+/* ==========Resume========== */
+.resume-title {
+  color: var(--wp-black);
+}
+#resume ul li {
+  font-size: 20px;
+  margin-right: 14px;
+  color: var(--wp-blue);
+}
+#resume ul li p {
+  color: var(--wp-grey);
+  font-size: 16px;
+}
+/* ==========Desktop Devices========== */
+@media (min-width: 992px) {
+  #home .heading {
+    font-size: 68px;
+  }
+  #about .description {
+    font-size: 20px;
+  }
+}
