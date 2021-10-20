@@ -120,10 +120,64 @@ section {
 }
 #resume ul li p {
   color: var(--wp-grey);
-  font-size: 16px;
+  font-size: 14px;
 }
 #resume ul li p i {
   margin-left: 4px;
+}
+
+/* ==========Portfolio========== */
+.btn-outline-secondary {
+  font-size: 18px;
+  border-color: var(--wp-blue);
+  color: var(--wp-blue);
+  padding: 4px 14px;
+}
+.btn-outline-secondary:hover {
+  background: var(--wp-blue);
+  border-color: var(--wp-blue);
+}
+.gallery_product {
+  margin-bottom: 30px;
+}
+#portfolio .card {
+  position: relative;
+  margin-bottom: 50px;
+  color: #000;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.15);
+}
+.card-head {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card-hover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(19, 93, 255, 0.9);
+  display: flex;
+  z-index: 0.5;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+/* Modal */
+.details a {
+  text-decoration: none;
 }
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {

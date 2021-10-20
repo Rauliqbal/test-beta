@@ -28,7 +28,7 @@
     <!-- START:Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo-brand.png" width="45" height="45" /></a>
+        <a class="navbar-brand" href="#"><img src="images/design/logo-brand.png" width="45" height="45" /></a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,7 +47,7 @@
               <a class="nav-link" href="#">Skills</a>
             </li>
             <li class="nav-item mx-auto ms-lg-3 ms-sm-0">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item mx-auto ms-lg-3 ms-sm-0">
               <a class="nav-link" href="#">Contact</a>
@@ -72,7 +72,7 @@
             </p>
           </div>
           <div class="col-lg-5 col-12 pt-5 pt-lg-0 px-4 px-lg-0 text-center">
-            <img class="img-fluid animate__animated animate__pulse animate__infinite" src="images/hero-img.svg" alt="" />
+            <img class="img-fluid animate__animated animate__pulse animate__infinite" src="images/design/hero-img.svg" alt="" />
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="row">
           <div class="col-lg-6 col-12 pt-4 text-center">
-            <img class="img-fluid" src="./images/Programming.gif" alt="" />
+            <img class="img-fluid" src="./images/design/Programming.gif" alt="" />
           </div>
           <div class="col-lg-5 col-12 align-self-center pt-4 px-3 px-lg-0">
             <div class="description">
@@ -127,6 +127,13 @@
                   <a href="https://www.dicoding.com/certificates/NVP719VNGPR0" target="_blank"><i class="fas fa-paperclip"></i></a>
                 </p>
               </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-graduation-cap"></i></span>BUILDWITH ANGGA
+                <p>
+                  Full-Stack Web Designer: Handoff & Front-End
+                  <a href="https://buildwithangga.com/talent/muhamadrauliqbal13/full-stack-web-designer-handoff-dan-front-end" target="_blank"><i class="fas fa-paperclip"></i></a>
+                </p>
+              </li>
             </ul>
           </div>
           <div class="col-lg-6 col-12">
@@ -146,10 +153,101 @@
     </section>
     <!-- END: Resume -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- START: Portfolio -->
+    <section id="portfolio">
+      <div class="container px-sm-0 px-lg-5 py-4">
+        <div class="section-title">
+          <h2 class="text-center mb-5">Portfolio</h2>
+        </div>
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-secondary rounded-pill filter-button text-center" data-filter="all">All</button>
+          <button class="btn btn-outline-secondary rounded-pill filter-button text-center" data-filter="development">Development</button>
+          <button class="btn btn-outline-secondary rounded-pill filter-button text-center" data-filter="design">Design</button>
+        </div>
+        <div class="row">
+          <div class="gallery-product col-md-4 center filter development">
+            <div class="card">
+              <div class="card-head">
+                <img class="img-fluid card-img" src="./images/content/development/Web company Profile.png" alt="" />
 
-    <script src="js/typewritter.js"></script>
+                <div class="card-hover">
+                  <h2>Lorem ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut, neque error ipsam libero quisquam.</p>
+                  <div class="d-flex flex-col">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Details</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content text-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Web Company Design</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container">
+                              <div class="row details">
+                                <div class="col-12 mb-4">
+                                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="./images/content/development/Web company Profile.png" class="d-block w-100" alt="..." />
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="./images/content/development/Web company Profile.png" class="d-block w-100" alt="..." />
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <h3>Project Information</h3>
+                                  <ul>
+                                    <li><strong>Design Tool</strong> : Figma</li>
+                                    <li><strong>Build With</strong> : HTML, CSS</li>
+                                    <li><strong>Design Source</strong> :<a href="https://rauliqbal.github.io/webcompanycss/"> Figma Community</a></li>
+                                    <li><strong>Project URL</strong> : <a href="https://rauliqbal.github.io/webcompanycss/"> Live Demo</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="" class="btn">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-product col-md-4 center filter design">
+            <img class="img-fluid" src="./images/content/development/Web company Profile.png" alt="" />
+          </div>
+          <div class="gallery-product col-md-4 center filter development">
+            <img class="img-fluid" src="./images/content/development/web portfolio.PNG" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: Portfolio -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/filterring.js"></script>
+    <script src="js/typewritter.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
