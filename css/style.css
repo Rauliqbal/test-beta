@@ -19,9 +19,16 @@ section {
   padding: 50px 0;
   overflow: hidden;
 }
-.dark-mode {
-  background-color: var(--dark-mode) !important;
-  color: #fff;
+.btn-light {
+  color: var(--wp-blue);
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-light:hover {
+  background: none;
+  color: var(--wp-black);
 }
 .section-title {
   color: var(--wp-grey);
@@ -137,36 +144,52 @@ section {
   background: var(--wp-blue);
   border-color: var(--wp-blue);
 }
-.gallery_product {
-  margin-bottom: 30px;
-}
+
 #portfolio .card {
   position: relative;
   margin-bottom: 50px;
   color: #000;
-  border-radius: 50px;
+  border-radius: 0;
   border: 1px solid #eee;
   background-color: #fff;
-  box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
 }
+
 .card-head {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
 }
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(67, 78, 94, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
 .card-hover {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
-  background-color: rgba(19, 93, 255, 0.9);
-  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 0.5;
+  display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--wp-blue);
   flex-direction: column;
   box-sizing: border-box;
   padding: 30px;
@@ -175,9 +198,17 @@ section {
   -ms-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }
+
+.card-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 /* Modal */
 .details a {
   text-decoration: none;
+}
+.modal-dialog {
+  max-width: 1020px;
 }
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {

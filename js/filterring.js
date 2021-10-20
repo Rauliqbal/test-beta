@@ -17,18 +17,13 @@ $(document).ready(function () {
     }
   });
 
-  if ($(".filter-button").removeClass("active")) {
-    $(this).removeClass("active");
-  }
-  $(this).addClass("active");
-
   $(".card")
     .mouseenter(function () {
-      $(".card-overlay").css({ top: "-100%" });
-      $(".card-hover").css({ top: "0" });
+      $(this).find(".card-overlay").css({ top: "-100%" });
+      $(this).find(".card-hover").css({ top: "0" });
     })
     .mouseleave(function () {
-      $(".card-overlay").css({ top: "0" });
-      $(".card-hover").css({ top: "100%" });
+      $(this).find(".card-overlay").css({ top: "0" });
+      $(this).find(".card-hover").css({ top: "100%" });
     });
 });
