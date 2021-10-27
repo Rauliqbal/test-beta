@@ -98,12 +98,11 @@ section {
   color: var(--wp-navy);
 }
 #home .description {
-  font-size: 22px;
+  font-size: 30px;
   color: var(--wp-grey);
-  margin-top: -15px;
 }
 #home span {
-  font-size: 22px;
+  font-size: 30px;
   color: var(--wp-blue);
 }
 #home img {
@@ -148,6 +147,30 @@ section {
   margin-left: 4px;
 }
 
+/*============ Skilss============ */
+#skills .info-skills {
+  border: none;
+  background-color: #fff;
+  width: 180px;
+  margin: 0 auto;
+}
+#skills .info-skills img {
+  width: 90px;
+  padding: 15px 15px;
+  border-radius: 20px;
+  border: 6px solid #fff;
+  color: var(--wp-blue);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+#skills .info-skills img:hover {
+  border: 6px solid var(--wp-blue);
+}
+#skills .info-skills p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--wp-grey);
+}
 /* ==========Portfolio========== */
 .btn-outline-secondary {
   font-size: 18px;
@@ -216,10 +239,7 @@ section {
 .card-hover h3 {
   font-size: 24px;
 }
-.card-body {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 .btn-light i {
   margin-right: 8px;
 }
@@ -236,6 +256,7 @@ section {
 .details-content {
   padding: 0;
 }
+
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {
   #home .heading {
