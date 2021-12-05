@@ -71,7 +71,7 @@ section {
     margin: 0 5px;
 }
 .navbar {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
 }
 .navbar-nav .nav-link {
     letter-spacing: 1px;
@@ -258,6 +258,51 @@ section {
 .btn-light {
     transition: all 0.3s;
 }
+
+footer {
+    height: 100%;
+    text-align: center;
+    box-shadow: 1px 0rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #f1f1ff;
+}
+.footer {
+    padding: 32px 0;
+}
+
+.footer h4 {
+    font-size: 16px;
+    color: var(--wp-black);
+    font-weight: 400;
+    margin: 0 auto;
+    cursor: default;
+}
+.footer h5 {
+    font-size: 16px;
+    margin-top: 14px;
+    cursor: default;
+}
+.social-media {
+    margin-top: 24px;
+}
+.hover-fx {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 8px;
+    width: 46px;
+    height: 46px;
+    line-height: 48px;
+    border-radius: 50%;
+    background-color: var(--wp-blue);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.hover-fx:hover {
+    background-color: #1447ac;
+    color: #fff;
+    box-shadow: 0 4 16px rgba(0, 0, 0, 0.281);
+}
+
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {
     #home {
