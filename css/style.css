@@ -82,8 +82,12 @@ section {
     letter-spacing: 1px;
 }
 /* ==========Hero========== */
+
+#home {
+    height: auto;
+}
 #home .heading {
-    font-size: 36px;
+    font-size: 32px;
     color: var(--wp-navy);
     font-weight: 600;
     line-height: 75px;
@@ -91,18 +95,17 @@ section {
     max-width: 100%;
 }
 #home .sub-heading {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 400;
-    line-height: 52px;
     margin-bottom: -10px;
     color: var(--wp-navy);
 }
 #home .description {
-    font-size: 30px;
+    font-size: 26px;
     color: var(--wp-grey);
 }
 #home span {
-    font-size: 30px;
+    font-size: 26px;
     color: var(--wp-blue);
 }
 #home img {
@@ -257,6 +260,9 @@ section {
 }
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {
+    #home {
+        height: 100vh;
+    }
     #home .heading {
         font-size: 68px;
     }
