@@ -195,7 +195,6 @@ section {
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 .portfolio .btn-primary:hover .fa-arrow-right {
   transform: translateX(6px);
@@ -211,11 +210,15 @@ section {
 .swiper-portfolio-icon {
   font-size: 24px;
 }
-.swiper-button-next {
-  left: -0.5rem;
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: -7px !important;
+  right: auto;
 }
-.swiper-button-next {
-  right: -0.5rem;
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -7px !important;
+  left: auto;
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,

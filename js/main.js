@@ -60,7 +60,6 @@ window.onload = function () {
 // Portfolio Swiper
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,
-  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
