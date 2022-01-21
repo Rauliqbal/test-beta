@@ -1,335 +1,283 @@
 /* Root Color */
 :root {
-    --wp-blue: #4581f6;
-    --wp-navy: #002265;
-    --wp-black: #07253c;
-    --wp-grey: #45505b;
-    --dark-mode: #121212;
+  --wp-blue: #4581f6;
+  --wp-navy: #002265;
+  --wp-black: #07253c;
+  --wp-grey: #45505b;
+  --dark-mode: #121212;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+* {
+  transition: all 0.3s ease-in-out;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 section {
-    padding: 50px 0;
-    overflow: hidden;
+  padding: 50px 0;
+  overflow: hidden;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #d9e5fc;
+  background-color: #d9e5fc;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--wp-blue);
-    border-radius: 13px;
-    transition: 0.3s;
+  background: var(--wp-blue);
+  border-radius: 13px;
+  transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1447ac;
+  background: #1447ac;
 }
 
-/* End Scrollbar */
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%4581f6' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%4581f6' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
 .btn-light {
-    color: var(--wp-blue);
-    background: none;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
+  color: var(--wp-blue);
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 .btn-light:hover {
-    background: none;
-    color: var(--wp-black);
+  background: none;
+  color: var(--wp-black);
 }
 .section-title {
-    color: var(--wp-grey);
+  color: var(--wp-grey);
 }
 .section-title h2 {
-    font-size: 34px;
-    position: relative;
-    padding-bottom: 12px;
+  font-size: 34px;
+  position: relative;
+  padding-bottom: 12px;
 }
 .section-title h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1.5px;
-    background: var(--wp-grey);
-    bottom: 2px;
-    left: calc(50% - 60px);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1.5px;
+  background: var(--wp-grey);
+  bottom: 2px;
+  left: calc(50% - 60px);
 }
 .section-title h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 5px;
-    background: var(--wp-blue);
-    bottom: 0;
-    left: calc(50% - 20px);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: var(--wp-blue);
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 /* ==========Navbar========== */
 .navbar a {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 .navbar {
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
 }
 .navbar-nav .nav-link {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 .navbar-nav .active {
-    color: var(--wp-blue) !important;
-    font-weight: 600;
-    letter-spacing: 1px;
+  color: var(--wp-blue) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 /* ==========Hero========== */
 
 #home {
-    height: auto;
+  height: auto;
 }
 #home .heading {
-    font-size: 32px;
-    color: var(--wp-navy);
-    font-weight: 600;
-    line-height: 75px;
-    letter-spacing: 1.5px;
-    max-width: 100%;
+  font-size: 32px;
+  color: var(--wp-navy);
+  font-weight: 600;
+  line-height: 75px;
+  letter-spacing: 1.5px;
+  max-width: 100%;
 }
 #home .sub-heading {
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: -10px;
-    color: var(--wp-navy);
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: -10px;
+  color: var(--wp-navy);
 }
 #home .description {
-    font-size: 26px;
-    color: var(--wp-grey);
+  font-size: 26px;
+  color: var(--wp-grey);
 }
 #home span {
-    font-size: 26px;
-    color: var(--wp-blue);
+  font-size: 26px;
+  color: var(--wp-blue);
 }
 #home img {
-    max-height: 500px;
-    animation-duration: 3s;
+  max-height: 500px;
+  animation-duration: 3s;
 }
 
 /* ==========About========== */
 #about img {
-    max-height: 500px;
-    transition: 2s;
+  max-height: 500px;
+  transition: 2s;
 }
 #about img:hover {
-    transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 #about .description {
-    font-size: 18px;
-    color: var(--wp-black);
+  font-size: 18px;
+  color: var(--wp-black);
 }
 #about .description span {
-    color: var(--wp-blue);
+  color: var(--wp-blue);
 }
 
 /* ==========Resume========== */
 .resume-title {
-    color: var(--wp-black);
-    margin-left: 8px;
-    font-size: 24px;
+  color: var(--wp-black);
+  margin-left: 8px;
+  font-size: 24px;
 }
 #resume ul li {
-    font-size: 20px;
-    margin-right: 14px;
-    color: var(--wp-blue);
-    font-weight: 600;
-    letter-spacing: 2px;
+  font-size: 20px;
+  margin-right: 14px;
+  color: var(--wp-blue);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 #resume ul li p {
-    color: var(--wp-grey);
-    font-size: 14px;
+  color: var(--wp-grey);
+  font-size: 14px;
 }
 #resume ul li p i {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /*============ Skilss============ */
 #skills .info-skills {
-    border: none;
-    background-color: #fff;
-    width: 180px;
-    margin: 0 auto;
+  border: none;
+  background-color: #fff;
+  width: 180px;
+  margin: 0 auto;
 }
 #skills .info-skills img {
-    width: 90px;
-    padding: 15px 15px;
-    border-radius: 20px;
-    color: var(--wp-blue);
-    transition: all 0.3s;
-    background-color: #f1f1f1;
+  width: 90px;
+  padding: 15px 15px;
+  border-radius: 20px;
+  color: var(--wp-blue);
+  transition: all 0.3s;
+  background-color: #f1f1f1;
 }
 #skills .info-skills img:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 #skills .info-skills p {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--wp-grey);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--wp-grey);
 }
 /* ==========Portfolio========== */
-.btn-outline-secondary {
-    font-size: 18px;
-    border-color: var(--wp-blue);
-    color: var(--wp-blue);
-    padding: 4px 14px;
+.portfolio-container {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
-.btn-outline-secondary:hover {
-    background: var(--wp-blue);
-    border-color: var(--wp-blue);
+.portfolio .btn-primary:hover .fa-arrow-right {
+  transform: translateX(6px);
 }
-
-#portfolio .card {
-    position: relative;
-    margin-bottom: 26px;
-    color: #000;
-    border-radius: 0;
-    border: 1px solid #eee;
-    background-color: #fff;
-    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+.fa-arrow-right {
+  font-size: 14px;
 }
 
-.card-head {
-    position: relative;
-    overflow: hidden;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+.swiper-portfolio-icon {
+  font-size: 24px;
+}
+.swiper-button-next {
+  left: -0.5rem;
+}
+.swiper-button-next {
+  right: -0.5rem;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -32px !important;
 }
 
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    background-color: rgba(67, 78, 94, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
-.card-hover {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.788);
-    z-index: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--wp-blue);
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 30px;
-    -webkit-transition: ease-in-out 0.3s;
-    -moz-transition: ease-in-out 0.3s;
-    -ms-transition: ease-in-out 0.3s;
-    transition: ease-in-out 0.3s;
-}
-.card-hover h3 {
-    font-size: 24px;
-}
-
-.btn-light i {
-    margin-right: 8px;
-}
-/* Modal */
-.details a {
-    text-decoration: none;
-}
-.modal-body {
-    padding: 14px 0 0 0;
-}
-.details li {
-    font-size: 16px;
-}
-.details-content {
-    padding: 0;
-}
-.btn-light {
-    transition: all 0.3s;
-}
-
+/*=========== Footer ===========*/
 footer {
-    height: 100%;
-    text-align: center;
-    box-shadow: 1px 0rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #f1f1ff;
+  height: 100%;
+  text-align: center;
+  box-shadow: 1px 0rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #f1f1ff;
 }
 .footer {
-    padding: 32px 0;
+  padding: 32px 0;
 }
 
 .footer h4 {
-    font-size: 16px;
-    color: var(--wp-black);
-    font-weight: 400;
-    margin: 0 auto;
-    cursor: default;
+  font-size: 16px;
+  color: var(--wp-black);
+  font-weight: 400;
+  margin: 0 auto;
+  cursor: default;
 }
 .footer h5 {
-    font-size: 16px;
-    margin-top: 14px;
-    cursor: default;
+  font-size: 16px;
+  margin-top: 14px;
+  cursor: default;
 }
 .social-media {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 .hover-fx {
-    color: #fff;
-    font-size: 18px;
-    display: inline-block;
-    margin: 0 8px;
-    width: 46px;
-    height: 46px;
-    line-height: 48px;
-    border-radius: 50%;
-    background-color: var(--wp-blue);
-    overflow: hidden;
-    transition: 0.3s;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 8px;
+  width: 46px;
+  height: 46px;
+  line-height: 48px;
+  border-radius: 50%;
+  background-color: var(--wp-blue);
+  overflow: hidden;
+  transition: 0.3s;
 }
 .hover-fx:hover {
-    background-color: #1447ac;
-    color: #fff;
-    box-shadow: 0 4 16px rgba(0, 0, 0, 0.281);
+  background-color: #1447ac;
+  color: #fff;
+  box-shadow: 0 4 16px rgba(0, 0, 0, 0.281);
 }
 
 /* ==========Desktop Devices========== */
 @media (min-width: 992px) {
-    #home {
-        height: 100vh;
-    }
-    #home .heading {
-        font-size: 68px;
-    }
-    #about .description {
-        font-size: 20px;
-    }
+  #home {
+    height: 100vh;
+  }
+  #home .heading {
+    font-size: 68px;
+  }
+  #about .description {
+    font-size: 20px;
+  }
 }
