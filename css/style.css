@@ -153,7 +153,6 @@ section {
   font-size: 20px;
   margin-right: 14px;
   color: var(--wp-blue);
-  font-weight: 600;
   letter-spacing: 2px;
 }
 #resume ul li p {
@@ -163,7 +162,9 @@ section {
 #resume ul li p i {
   margin-left: 4px;
 }
-
+.resume span {
+  font-weight: 600;
+}
 /*============ Skilss============ */
 #skills .info-skills {
   border: none;
@@ -188,6 +189,9 @@ section {
   color: var(--wp-grey);
 }
 /* ==========Portfolio========== */
+.portfolio p {
+  color: var(--wp-grey);
+}
 .portfolio-container {
   position: relative;
   list-style: none;
